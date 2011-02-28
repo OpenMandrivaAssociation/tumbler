@@ -7,7 +7,7 @@
 Summary: 	A thumbnail D-Bus service
 Name: 		tumbler
 Version: 	0.1.21
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 License:	GPLv2+
 Group: 		Graphical desktop/Xfce
 URL:		http://git.xfce.org/apps/tumbler
