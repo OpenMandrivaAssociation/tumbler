@@ -6,8 +6,8 @@
 
 Summary: 	A thumbnail D-Bus service
 Name: 		tumbler
-Version: 	0.1.21
-Release: 	%mkrel 2
+Version: 	0.1.22
+Release: 	%mkrel 1
 License:	GPLv2+
 Group: 		Graphical desktop/Xfce
 URL:		http://git.xfce.org/apps/tumbler
@@ -17,6 +17,7 @@ BuildRequires:	intltool
 BuildRequires:	freetype2-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libgdk_pixbuf2.0-devel
+BuildRequires:	poppler-glib-devel
 Requires:	%{libname} = %{version}-%{release}
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
