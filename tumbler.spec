@@ -16,8 +16,10 @@ BuildRequires:	dbus-glib-devel
 BuildRequires:	intltool
 BuildRequires:	freetype2-devel
 BuildRequires:	libpng-devel
+BuildRequires:	libjpeg-devel
 BuildRequires:	libgdk_pixbuf2.0-devel
-BuildRequires:	poppler-glib-devel
+BuildRequires:	libpoppler-glib-devel
+BuildRequires:	libgstreamer-devel
 Requires:	%{libname} = %{version}-%{release}
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
