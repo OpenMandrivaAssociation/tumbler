@@ -6,7 +6,7 @@
 
 Summary: 	A thumbnail D-Bus service
 Name: 		tumbler
-Version: 	0.1.22
+Version: 	0.1.23
 Release: 	%mkrel 1
 License:	GPLv2+
 Group: 		Graphical desktop/Xfce
@@ -61,7 +61,7 @@ rm -rf %{buildroot}
 
 rm -rf %{buildroot}%{_libdir}/*.la
 
-%find_lang %{name}
+%find_lang %{name} %{name}.lang
 
 %clean
 rm -rf %{buildroot}
