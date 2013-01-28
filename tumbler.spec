@@ -14,7 +14,7 @@ URL:		http://git.xfce.org/apps/tumbler
 Source0:	http://archive.xfce.org/src/apps/tumbler/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	dbus-glib-devel
 BuildRequires:	intltool
-BuildRequires:	freetype2-devel
+BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	jpeg-devel
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
