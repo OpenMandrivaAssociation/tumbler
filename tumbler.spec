@@ -6,12 +6,12 @@
 
 Summary:	A thumbnail D-Bus service
 Name:		tumbler
-Version:	0.1.29
+Version:	0.1.30
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://git.xfce.org/apps/tumbler
-Source0:	http://archive.xfce.org/src/apps/tumbler/%{url_ver}/%{name}-%{version}.tar.bz2
+Source0:	http://archive.xfce.org/src/apps/tumbler/0.1/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(freetype2)
@@ -139,4 +139,5 @@ Development files and headers for %{name}.
 + Revision: 474944
 - add spec and source files
 - Created package structure for tumbler.
+
 
