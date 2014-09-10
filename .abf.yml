@@ -1,3 +1,4 @@
----
-sources:
+removed_sources:
   tumbler-0.1.29.tar.bz2: 9037050413a32726b2061e71c804be3c1b5a69a0
+sources:
+  tumbler-0.1.30.tar.bz2: fa0dc44bc414e214a2f1eb80c91ba7869d9f8240
