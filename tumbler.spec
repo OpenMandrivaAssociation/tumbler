@@ -1,17 +1,18 @@
-%define url_ver %(echo %{version} | cut -c 1-3)
+%define url_ver %(echo %{version} | cut -d. -f1,2)
 %define major 0
 %define api 1
 %define libname %mklibname %{name} %{api} %{major}
 %define develname %mklibname %{name} -d
+%define _disable_rebuild_configure 1
 
 Summary:	A thumbnail D-Bus service
 Name:		tumbler
-Version:	0.1.31
+Version:	0.2.1
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://git.xfce.org/apps/tumbler
-Source0:	http://archive.xfce.org/src/apps/tumbler/0.1/%{name}-%{version}.tar.bz2
+Source0:	http://archive.xfce.org/src/apps/tumbler/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(freetype2)
@@ -19,7 +20,7 @@ BuildRequires:	pkgconfig(libpng)
 BuildRequires:	jpeg-devel
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(poppler-glib)
-BuildRequires:	pkgconfig(gstreamer-0.10)
+BuildRequires:	pkgconfig(gstreamer-1.0)
 Requires:	%{libname} = %{version}-%{release}
 
 %description
