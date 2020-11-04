@@ -53,10 +53,10 @@ Development files and headers for %{name}.
 %configure \
 	--disable-static
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %find_lang %{name} %{name}.lang
 
