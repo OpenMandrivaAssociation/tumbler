@@ -7,20 +7,28 @@
 
 Summary:	A thumbnail D-Bus service
 Name:		tumbler
-Version:	0.3.0
+Version:	4.16.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://git.xfce.org/apps/tumbler
 Source0:	http://archive.xfce.org/src/apps/tumbler/%{url_ver}/%{name}-%{version}.tar.bz2
+
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	intltool
+BuildRequires:	xfce4-dev-tools
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(libpng)
+BuildRequires:	pkgconfig(libcurl)
+BuildRequires:	pkgconfig(libffmpegthumbnailer)
+BuildRequires:	pkgconfig(libgepub-0.6)
+BuildRequires:	pkgconfig(libgsf-1)
+BuildRequires:	pkgconfig(libopenraw-gnome-0.1)
 BuildRequires:	jpeg-devel
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(poppler-glib)
 BuildRequires:	pkgconfig(gstreamer-1.0)
+BuildRequires:	pkgconfig(gstreamer-tag-1.0)
 Requires:	%{libname} = %{version}-%{release}
 
 %description
@@ -61,11 +69,12 @@ Development files and headers for %{name}.
 %find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
-%doc AUTHORS README TODO ChangeLog
+%doc AUTHORS README* TODO ChangeLog
 %{_libdir}/tumbler-1/%{name}d
 %{_libdir}/tumbler-1/plugins
 %{_datadir}/dbus-1/services/*.service
 %{_sysconfdir}/xdg/tumbler/tumbler.rc
+%{_iconsdir}/hicolor/*x*/apps/org.xfce.tumbler.png
 
 %files -n %{libname}
 %{_libdir}/*%{name}-%{api}.so.%{major}*
