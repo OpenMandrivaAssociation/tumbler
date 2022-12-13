@@ -17,6 +17,7 @@ Source0:	http://archive.xfce.org/src/apps/tumbler/%{url_ver}/%{name}-%{version}.
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	intltool
 BuildRequires:	xfce4-dev-tools
+BuildRequires:	pkgconfig(libxfce4util-1.0)
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(libcurl)
