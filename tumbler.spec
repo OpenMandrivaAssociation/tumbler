@@ -74,6 +74,7 @@ Development files and headers for %{name}.
 %{_libdir}/tumbler-1/%{name}d
 %{_libdir}/tumbler-1/plugins
 %{_datadir}/dbus-1/services/*.service
+%{_prefix}/lib/systemd/user/tumblerd.service
 %{_sysconfdir}/xdg/tumbler/tumbler.rc
 %{_iconsdir}/hicolor/*x*/apps/org.xfce.tumbler.png
 
