@@ -70,7 +70,7 @@ Development files and headers for %{name}.
 %find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
-%doc AUTHORS README* TODO ChangeLog
+%doc AUTHORS README* ChangeLog
 %{_libdir}/tumbler-1/%{name}d
 %{_libdir}/tumbler-1/plugins
 %{_datadir}/dbus-1/services/*.service
