@@ -8,7 +8,7 @@
 Summary:	A thumbnail D-Bus service
 Name:		tumbler
 Version:	4.18.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://git.xfce.org/apps/tumbler
@@ -22,7 +22,7 @@ BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(libcurl)
 BuildRequires:	pkgconfig(libffmpegthumbnailer)
-BuildRequires:	pkgconfig(libgepub-0.6)
+BuildRequires:	pkgconfig(libgepub-0.7)
 BuildRequires:	pkgconfig(libgsf-1)
 BuildRequires:	pkgconfig(libopenraw-gnome-0.1)
 BuildRequires:	jpeg-devel
