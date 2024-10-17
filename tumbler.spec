@@ -11,7 +11,7 @@ Version:	4.18.2
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
-URL:		http://git.xfce.org/apps/tumbler
+URL:		https://git.xfce.org/apps/tumbler
 Source0:	http://archive.xfce.org/src/apps/tumbler/%{url_ver}/%{name}-%{version}.tar.bz2
 
 BuildRequires:	pkgconfig(dbus-glib-1)
