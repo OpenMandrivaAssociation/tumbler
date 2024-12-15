@@ -1,18 +1,19 @@
 %define url_ver %(echo %{version} | cut -d. -f1,2)
 %define major 0
 %define api 1
-%define libname %mklibname %{name} %{api} %{major}
+%define libname %mklibname %{name}
+%define oldlibname %mklibname %{name} 1 0
 %define develname %mklibname %{name} -d
 %define _disable_rebuild_configure 1
 
 Summary:	A thumbnail D-Bus service
 Name:		tumbler
-Version:	4.18.2
+Version:	4.20.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		https://git.xfce.org/apps/tumbler
-Source0:	http://archive.xfce.org/src/apps/tumbler/%{url_ver}/%{name}-%{version}.tar.bz2
+Source0:	https://archive.xfce.org/src/apps/tumbler/%{url_ver}/%{name}-%{version}.tar.bz2
 
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	intltool
@@ -41,6 +42,7 @@ specification.
 %package -n %{libname}
 Summary:	A D-bus thumbnailing framweork
 Group:		System/Libraries
+%rename %{oldlibname}
 
 %description -n %{libname}
 Tumbler is a D-Bus service for applications to request 
@@ -56,7 +58,7 @@ Provides:	%{name}-devel = %{EVRD}
 Development files and headers for %{name}.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure \
