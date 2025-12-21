@@ -15,6 +15,11 @@ Group:		Graphical desktop/Xfce
 URL:		https://git.xfce.org/apps/tumbler
 Source0:	https://archive.xfce.org/src/xfce/tumbler/%{url_ver}/%{name}-%{version}.tar.bz2
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	intltool
 BuildRequires:	xfce4-dev-tools
