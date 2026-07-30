@@ -30,7 +30,7 @@ BuildRequires:	pkgconfig(libcurl)
 BuildRequires:	pkgconfig(libffmpegthumbnailer)
 BuildRequires:	pkgconfig(libgepub-0.7)
 BuildRequires:	pkgconfig(libgsf-1)
-BuildRequires:	pkgconfig(libopenraw-gnome-0.1)
+#BuildRequires:	pkgconfig(libopenraw-gnome-0.1)
 BuildRequires:	jpeg-devel
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(poppler-glib)
