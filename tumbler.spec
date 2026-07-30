@@ -8,7 +8,7 @@
 
 Summary:	A thumbnail D-Bus service
 Name:		tumbler
-Version:	4.20.1
+Version:	4.20.2
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
